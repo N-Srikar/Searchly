@@ -43,7 +43,7 @@ app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(hours=1)
 jwt = JWTManager(app)
 
 
-mongo_client = MongoClient('mongodb://localhost:27017/')
+mongo_client = MongoClient('mongodb+srv://srikarnarsingoju04:<srikarnarsingoju04password>@test.rfv7c5u.mongodb.net/')
 db = mongo_client['product-recommendation-system']
 users_collection = db['users']
 tags_collection = db['tags']
@@ -360,7 +360,8 @@ def get_recommendations():
     existing_user = tags_collection.find_one({"email": email})
     if not existing_user:
         # Initialize the tags field for the user as an empty list
-        tags_collection.insert_one({"email": email, "tags": []})
+        tags_collection.insert_one({"email": email, "tags":
+                                     []})
         return jsonify({"result": []}), 200
 
     # If tags field is empty, return an empty result
