@@ -245,7 +245,8 @@ Here is a comprehensive list of all API endpoints in the provided code:
 ## Screenshots
 
 ### 1. Landing Page
-![image](https://github.com/user-attachments/assets/c5f0377b-6a58-4388-8bed-b93aedb76540)
+![image](https://github.com/user-attachments/assets/71b231ef-fd4a-4802-8c4f-c399d3f2f9ed)
+
 
 ### 2. AI Chatbot
 ![image](https://github.com/user-attachments/assets/5b5152a7-3009-4cf1-a6de-35ae47318c59)
